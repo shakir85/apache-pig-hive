@@ -1,6 +1,6 @@
 # Logs-Analysis
 
-Simple Apache Pig script for log files processing. It reads local files, extracts data-fields, then it converts them onto columnar formatted files. The goal is to make this file ready to be queried from Apache Hive. The logs are Apache-Common formatted.
+Simple Apache Pig script for log files processing. It reads local files, extracts data-fields, then it converts them to comma delimited file. The goal is to make this file ready to be queried from Apache Hive. The logs are Apache-Common formatted.
 
 ## Tools and Configurations
 Apache Pig and Apache Hive in MapReduce mode using Cloudera sandbox. The input log file is stored in a local HDFS and the output is going to be exported to Hadoop. Data extraction is processed via `CommonLogLoader()` function retrieved from Pig source code [PiggyBank SVN] http://svn.apache.org/repos/asf/pig/trunk/ All required dependencies included in the `dependecies.xml` file
